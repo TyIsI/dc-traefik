@@ -1,0 +1,6 @@
+services:
+    traefik:
+        ports:
+            - 443:443
+        volumes:
+            - ./confs/available/letsencrypt.yml:/conf/letsencrypt.yml

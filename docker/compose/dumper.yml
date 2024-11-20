@@ -1,0 +1,9 @@
+services:
+    dumper:
+        build:
+            context: .
+            dockerfile: docker/dumper/Dockerfile.dumper
+        command: ["daemon"]
+        network_mode: none
+        volumes:
+            - ./letsencrypt:/data

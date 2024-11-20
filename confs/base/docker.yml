@@ -1,0 +1,4 @@
+providers:
+    docker:
+        exposedbydefault: false
+        network: proxy

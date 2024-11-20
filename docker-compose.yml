@@ -1,0 +1,21 @@
+services:
+    traefik:
+        image: traefik:v2.7
+        container_name: traefik
+        command:
+            - --providers.file.directory=/conf
+            - --providers.file.watch=true
+        networks:
+            - public
+            - proxy
+        ports:
+            - 80:80
+        restart: always
+        volumes:
+            - ./confs/enabled:/conf:ro
+
+networks:
+    public:
+        external: true
+    proxy:
+        external: true
