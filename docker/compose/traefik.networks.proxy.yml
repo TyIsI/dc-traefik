@@ -1,0 +1,8 @@
+services:
+    traefik:
+        networks:
+            - proxy
+
+networks:
+    proxy:
+        external: true

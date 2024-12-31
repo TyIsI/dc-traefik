@@ -1,3 +1,0 @@
-providers:
-    docker:
-        endpoint: tcp://docker-proxy:2375

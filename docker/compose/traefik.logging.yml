@@ -1,0 +1,5 @@
+services:
+    traefik:
+        command:
+            - "--log=true"
+            - "--log.level=ERROR"

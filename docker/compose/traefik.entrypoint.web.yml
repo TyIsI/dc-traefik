@@ -1,0 +1,4 @@
+services:
+    traefik:
+        command:
+            - "--entrypoints.web.address=:80"

@@ -1,0 +1,8 @@
+services:
+    traefik:
+        networks:
+            - public
+
+networks:
+    public:
+        external: true

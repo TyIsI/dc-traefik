@@ -1,0 +1,5 @@
+services:
+    traefik:
+        command:
+            - "--providers.docker.exposedbydefault=false"
+            - "--providers.docker.network=proxy"

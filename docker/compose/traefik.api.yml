@@ -1,0 +1,5 @@
+services:
+    traefik:
+        command:
+            - "--api.insecure=true"
+            - "--api.dashboard=true"

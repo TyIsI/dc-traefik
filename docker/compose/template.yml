@@ -1,0 +1,5 @@
+services:
+    traefik:
+        command:
+            - "--providers.file.directory=/conf"
+            - "--providers.file.watch=true"

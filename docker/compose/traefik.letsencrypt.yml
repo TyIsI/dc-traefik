@@ -1,0 +1,8 @@
+services:
+    traefik:
+        command:
+            - "--certificatesresolvers.lets-encrypt.acme.httpchallenge.entrypoint=web"
+            - "--certificatesresolvers.lets-encrypt.acme.email=${LETSENCRYPT_EMAIL}"
+            - "--certificatesresolvers.lets-encrypt.acme.storage=/letsencrypt/acme.json"
+        volumes:
+            - ./confs/available/letsencrypt.yml:/conf/letsencrypt.yml

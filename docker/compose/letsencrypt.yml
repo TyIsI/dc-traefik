@@ -1,4 +1,0 @@
-services:
-    traefik:
-        volumes:
-            - ./confs/available/letsencrypt.yml:/conf/letsencrypt.yml

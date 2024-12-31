@@ -11,14 +11,14 @@ services:
             - /var/run/docker.sock:/var/run/docker.sock:ro
 
     traefik:
+        command:
+            - "--providers.docker.endpoint=tcp://docker-proxy:2375"
         depends_on:
             - docker-proxy
         environment:
             - DOCKER_HOST=docker-proxy:2375
         networks:
             - docker-proxy
-        volumes:
-            - ./confs/available/docker-proxy.yml:/conf/docker-proxy.yml
 
 networks:
     docker-proxy:

@@ -12,8 +12,12 @@
 
 !.editorconfig
 
-!docker-compose.yml
-
 !README.md
 
 !sample.env
+
+!bootstrap.sample.conf
+!bootstrap.sh
+
+!docker-compose.yml
+!docker-compose.override-sample.yml

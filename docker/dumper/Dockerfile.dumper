@@ -4,6 +4,6 @@ WORKDIR /data
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["/usr/bin/traefik-certs-dumper"]
 
-RUN apk add jq
+RUN apk --no-cache add jq
 
 COPY docker/dumper/entrypoint.dumper.sh /entrypoint.sh
